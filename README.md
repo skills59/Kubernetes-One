@@ -7,9 +7,9 @@ Simple kubernetes exercise deploying a fullstack sringboot react application to 
  then kubectl can be used to interact with the clusters from the local machine.
 
 # Steps to take before the excercise 
-- make sure you have your fullstatck alication built and ready on vscode 
+- make sure you have your fullstatck application built and ready on vscode 
 - Push project to github
-- build or create an image for the aplcation using docker
+- build or create an image for the applcation using docker
 - push to dockerhub
 
 ## Once you have your image on dockerhub we can now start the excercise using minikube and kubectl 
@@ -33,12 +33,12 @@ Simple kubernetes exercise deploying a fullstack sringboot react application to 
   - create a deployment,
   - state the number of replicas which = 2, 
   - create a service
-  - include and pull the fullstack aplication image previously pushed to dockerhub on the template 
+  - include and pull the fullstack application image previously pushed to dockerhub on the template 
   - eg i used this image : amigoscode/kubernetes:springboot-react-fullstack-v1
   - create your listening port = 80
   - target port should be =8080
   - increased the memory size to = 512Mi
-  - expose the service to a NodePort or LoadBalancer but ffor this project i used a NodePort 
+  - expose the service to a NodePort or LoadBalancer but for this project i used a NodePort 
   
 # Template Sample
 
@@ -83,7 +83,7 @@ spec:
 ---
 
 
-6- now deploy the template use the script 
+6- now deploy the template using the script 
 - "kubectl apply -f deployment.yml"
 
 
@@ -92,7 +92,7 @@ spec:
  - "kubectl get pods"
  - "kubectl get services or svc"
  
-8-  in order to access the service or alication deployed, make use of the following script
+8-  in order to access the service or application deployed, make use of the following script
   - "minikube service {service name}"
 - it automatically opens up on your web browser, if it doesnt it dislays the url to find the application 
   - e.g : 127.1.1.0:2324

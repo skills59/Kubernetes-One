@@ -7,7 +7,7 @@ Simple kubernetes exercise deploying a fullstack sringboot react application to 
  then kubectl can be used to interact with the clusters from the local machine.
 
 # Steps to take before the excercise 
-- make sure you have your fullstatck alications built and ready on vscode 
+- make sure you have your fullstatck alication built and ready on vscode 
 - Push project to github
 - build or create an image for the aplcation using docker
 - push to dockerhub
